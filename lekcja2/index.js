@@ -67,6 +67,7 @@ for(;dzialanie !== "0";) {
         case "5" :
         case "poteguj" :
             alert (poteguj(numberX, numberY));
+            break;
         case "6":
         case "pierwiastkuj":
             alert (pierwiastkuj(numberX));

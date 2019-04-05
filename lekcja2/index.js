@@ -19,10 +19,17 @@ function podziel(x,y) {
     return x / y;
 }
 
+function poteguj(x, y) {
+    return Math.pow(x, y);
+}
+function pierwiastkuj(x)  {
+    return Math.sqrt(x);
+}
+
 let dzialanie;
 
 for(;dzialanie !== "0";) {
-    dzialanie = prompt("1= dodawanmie 2=odejmowanie 3=mnożenie 4=dzielenie");
+    dzialanie = prompt("1= dodawanmie 2=odejmowanie 3=mnożenie 4=dzielenie 5=potęgowanie 6=pierwiastkowanie ");
 
     const numberX = getNumber("X");
     const numberY = getNumber("Y");
@@ -57,7 +64,13 @@ for(;dzialanie !== "0";) {
         case "podziel":
             alert(podziel(numberX, numberY));
             break;
-        default:
+        case "5" :
+        case "poteguj" :
+            alert (poteguj(numberX, numberY));
+        case "6":
+        case "pierwiastkuj":
+            alert (pierwiastkuj(numberX));
+         default:
             alert("Zły wybór"); 
     }
 }

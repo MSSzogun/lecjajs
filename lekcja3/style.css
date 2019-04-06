@@ -1,0 +1,39 @@
+.calc {
+    display: flex;
+    flex-direction: column;
+}
+
+.screen-wrapper {
+    border: 1px solid black;
+    width: 240px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#screen {
+    width: 200px;
+    height: 20px;
+    text-align: right
+}
+
+#result {
+    width: 200px;
+    height: 20px;
+}
+
+#result:before {
+    content: "=";
+}
+
+.keypad {
+    width: 240px;
+}
+
+.keypad button {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+
+}

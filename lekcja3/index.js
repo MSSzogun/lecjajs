@@ -1,8 +1,6 @@
 const k_ce = document.getElementById('k_ce');
 const k_c = document.getElementById('k_c');
 const k_del = document.getElementById('k_del');
-const k_div = document.getElementById('k_div');
-const k_mul = document.getElementById('k_mul');
 const k_plus_minus = document.getElementById('k_plus_minus');
 
 // ---------------------------
@@ -67,7 +65,9 @@ document.getElementById('k_eq').addEventListener('click', () => {
 
 document.getElementById('k_add').addEventListener('click', functionalKey('+'));
 document.getElementById('k_sub').addEventListener('click', functionalKey('-'));
-
+document.getElementById('k_div').addEventListener('click', functionalKey('/'));
+document.getElementById('k_mul').addEventListener('click', functionalKey('*'));
+document.getElementById('k_del').addEventListener('click', functionalKey('del'))
 // -----------------------------
 
 const calc = (op, x, y) => {
@@ -76,6 +76,7 @@ const calc = (op, x, y) => {
         case '-': return x - y;
         case '*': return x * y;
         case '/': return x / y;
+        case '': return 
     }
 }
 
